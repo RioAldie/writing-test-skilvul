@@ -11,13 +11,21 @@
 - Command Line Interface atau CLI adalah program yang memungkinkan pengguna mengetik perintah teks yang memerintahkan komputer untuk melakukan tugas tertentu.
 - Ada Beberapa CLI Shell contoh:
 
-```
-    - bash
-    - zsh
-    - fish
-    - dash
-- Cara mengakses cli dikomputer untuk windows adalah menggunakan command promt, yaitu Buka menu pada ❖ atau Windows Logo 🡒 ketik “Command Prompt” 🡒 pilih Command Prompt.
--    ![image info](./asset/command-prompt.png)
-- berikut adalah tampilan awal dari command-prompt, cli bawaan dari windows.
+  - bash
+  - zsh
+  - fish
+  - dash
 
-```
+- Cara mengakses cli dikomputer untuk windows adalah menggunakan command promt, yaitu Buka menu pada ❖ atau Windows Logo 🡒 ketik “Command Prompt” 🡒 pilih Command Prompt.
+- berikut adalah tampilan awal dari command-prompt, cli bawaan dari windows.
+- ![image info](./asset/command-prompt.png)
+- didalam CLI kita bisa melakukan berbagai perintah seperti
+  -membuat file
+  -menghapus file
+  -menganti nama sebuah file
+  -dll.
+- **Graphic User Interface**
+- GUI merupakan bentuk antarmuka yang memungkinkan pengguna untuk menggunakan elemen grafis dalam berinteraksi dengan komputer atau sistem operasi.
+- ini adalah tampilan GUI yang ada di Windows
+- ![image info](./asset/Gui.png)
+  didalam GUI kita juga bisa melakukan beberapa hal seperti di CLI, GUI juga memiliki kelebihannya sendiri yaitu didalam GUI kita mampu menampilkan media visual seperti Image, Poto dan Video.

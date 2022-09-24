@@ -48,7 +48,7 @@
 - untuk masuk kedalam sebuah directory dapat menggunakan
 
 ```
-cd namadirektori
+  cd namadirektori
 
 ```
 
@@ -56,13 +56,92 @@ cd namadirektori
 - untuk keluar dari directory dapat menggunakan
 
 ```
-cd ..
+  cd ..
 
 ```
 
 - ![image info](./asset/cd-out.png)
-  <!-- Peserta mampu menggunakan command untuk berpindah directory  -->
-  <!-- Peserta mampu menggunakan command untuk melihat isi files  -->
+- **head,tail,cat**
+- head, tail dan cat sama-sama berfungsi untuk menampilkan isi dari sebuah files, walaupun memiliki fungsi yang sama mereka memiliki kemampuan yang berbeda-beda seperti head hanya akan menampilkan bagian kepala atau atas dari sebuah file, sedangkan tail adalah kebalikan head tail akan menampilkan bagian akhir dari sebuah file, sedangkan cat berfungsi untuk menampilkan seluruh isi dari file karena itulah cat jauh lebih sering digunakan.
+- contoh penggunaan cat
+- ![image info](./asset/cat.png)
+
+- **mkdir**
+- command mkdir berfungsi untuk membuat atau menambah sebuah direktori atau folder baru
+- cara penggunaan mkdir
+
+```
+- mkdir (spasi) nama direktori
+
+```
+
+- ![image info](./asset/mkdir.png)
+
+- **Touch**
+- Touch berfungsi membuat file baru dapat menggunakan Touch
+- cara menggunakan touch
+
+```
+- touch (spasi) nama file yang akan dibuat
+
+```
+
+- ![image info](./asset/touch.png)
+
+- **cp**
+- cp adalah command untuk menyalin atau mencopy direktori dan file
+- cara menyalin direktori menggunakan cp adalah mengetikan cp -r (nama direktori yang akan dicopy) (nama direktori baru)
+
+```
+- cp -r direktori_baru direktori_copian
+
+```
+
+- - ![image info](./asset/cpr.png)
+
+- cara menyalin file menggunakan cp adalah mengetikan cp (nama file yang akan dicopy) (nama file baru)
+
+```
+- cp file_baru file_copian
+
+```
+
+- ![image info](./asset/cp.png)
+
+- **mv**
+- command mv berfungsi untuk memindahkan atau rename file dan direktori
+- cara penggunaan mv sebagai berikut
+
+  - untuk memindahkan file caranya adalah mengetikan mv (nama file yang akan dipindahkan) (direktori yang dituju)
+
+  ```
+    mv file.html direktori/
+
+  ```
+
+  - hasil ![image info](./asset/mv-file.png)
+  - untuk memindahkan direktori caranya adalah mengetikan mv (nama direktori yang akan dipindahkan) (direktori yang dituju)
+
+  ```
+    mv directori_satu/ direktori_dua/
+
+  ```
+
+  - hasil ![image info](./asset/mv-r.png)
+  - untuk menganti nama file/direktori adalah mengetikan mv (nama file sebelumnya) (nama file baru)
+
+  ```
+    mv nama_lama nama_baru
+
+  ```
+
+  - hasil ![image info](./asset/mv-rename.png)
+
+- **rm**
+- command rm berfungsi untuk menghapus direktori dan file
+- untuk menghapus file/direktori cukup menuliskan rm (nama file yang akan dihapus)
+- hasil ![image info](./asset/rm.png)
+
   <!-- Peserta mampu menggunakan command untuk membuat file & direktori  -->
   <!-- Peserta mampu menggunakan command untuk menyalin file & direktori  -->
   <!-- Peserta mampu menggunakan command untuk memindahkan atau me-rename file dan direktori  -->

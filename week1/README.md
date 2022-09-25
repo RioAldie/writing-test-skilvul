@@ -2,12 +2,13 @@
 
 ## Unix Command Line
 
-### Shell
+#### **Shell**
 
-- **Shell**
 - Shell adalah user interface yang bertugas untuk memproses semua perintah yang diketik di CLI.
 - Terdapat 2 jenis shell yaitu Command Line Interface (CLI) dan Graphical User Interface (GUI).
-- **Command Line Interface**
+
+#### **Command Line Interface**
+
 - Command Line Interface atau CLI adalah program yang memungkinkan pengguna mengetik perintah teks yang memerintahkan komputer untuk melakukan tugas tertentu.
 - Ada Beberapa CLI Shell contoh:
 
@@ -24,12 +25,16 @@
   -menghapus file
   -menganti nama sebuah file
   -dll.
-- **Graphic User Interface**
+
+#### **Graphic User Interface**
+
 - GUI merupakan bentuk antarmuka yang memungkinkan pengguna untuk menggunakan elemen grafis dalam berinteraksi dengan komputer atau sistem operasi.
 - ini adalah tampilan GUI yang ada di Windows
 - ![image info](./asset/Gui.png)
   didalam GUI kita juga bisa melakukan beberapa hal seperti di CLI, GUI juga memiliki kelebihannya sendiri yaitu didalam GUI kita mampu menampilkan media visual seperti Image, Poto dan Video.
-- **File System**
+
+#### **File System**
+
 - Pengertian File System itu adalah suatu cara untuk memisahkan data yang ada pada disk/drive dan dibagi menjadi beberapa bagian.
 - semua disk atau penyimpanan yang ada dikomputer pasti menggunakan file system tertentu.
   - windows menggunakan **NTFS(New Technology File System)**
@@ -39,11 +44,15 @@
 - command pwd berfungsi untuk melihat current working directory
 - untuk menggunakan pwd cukup mengetikan pwd di shell cli.
 - ![image info](./asset/pwd.png)
-- **ls**
+
+#### **ls**
+
 - command ls berfungsi untuk menampilkasn list isi di sebuah directory
 - untuk menggunakan ls cukup mengetikan ls di shell cli.
 - ![image info](./asset/ls.png)
-- **cd**
+
+#### **cd**
+
 - command cd berfungsi untuk berpindah directory
 - untuk masuk kedalam sebuah directory dapat menggunakan
 
@@ -61,12 +70,15 @@
 ```
 
 - ![image info](./asset/cd-out.png)
-- **head,tail,cat**
+
+#### **head,tail,cat**
+
 - head, tail dan cat sama-sama berfungsi untuk menampilkan isi dari sebuah files, walaupun memiliki fungsi yang sama mereka memiliki kemampuan yang berbeda-beda seperti head hanya akan menampilkan bagian kepala atau atas dari sebuah file, sedangkan tail adalah kebalikan head tail akan menampilkan bagian akhir dari sebuah file, sedangkan cat berfungsi untuk menampilkan seluruh isi dari file karena itulah cat jauh lebih sering digunakan.
 - contoh penggunaan cat
 - ![image info](./asset/cat.png)
 
-- **mkdir**
+#### **mkdir**
+
 - command mkdir berfungsi untuk membuat atau menambah sebuah direktori atau folder baru
 - cara penggunaan mkdir
 
@@ -77,7 +89,8 @@
 
 - ![image info](./asset/mkdir.png)
 
-- **Touch**
+#### **Touch**
+
 - Touch berfungsi membuat file baru dapat menggunakan Touch
 - cara menggunakan touch
 
@@ -88,7 +101,8 @@
 
 - ![image info](./asset/touch.png)
 
-- **cp**
+#### **cp**
+
 - cp adalah command untuk menyalin atau mencopy direktori dan file
 - cara menyalin direktori menggunakan cp adalah mengetikan cp -r (nama direktori yang akan dicopy) (nama direktori baru)
 
@@ -108,7 +122,8 @@
 
 - ![image info](./asset/cp.png)
 
-- **mv**
+#### **mv**
+
 - command mv berfungsi untuk memindahkan atau rename file dan direktori
 - cara penggunaan mv sebagai berikut
 
@@ -137,12 +152,101 @@
 
   - hasil ![image info](./asset/mv-rename.png)
 
-- **rm**
+#### **rm**
+
 - command rm berfungsi untuk menghapus direktori dan file
 - untuk menghapus file/direktori cukup menuliskan rm (nama file yang akan dihapus)
 - hasil ![image info](./asset/rm.png)
 
-  <!-- Peserta mampu menggunakan command untuk membuat file & direktori  -->
-  <!-- Peserta mampu menggunakan command untuk menyalin file & direktori  -->
-  <!-- Peserta mampu menggunakan command untuk memindahkan atau me-rename file dan direktori  -->
-  <!-- Peserta mampu menggunakan command untuk menghapus file & direktori -->
+## Git dan Github Dasar
+
+<!-- Peserta mampu memahami kenapa Git dan Github tools yang wajib digunakan -->
+
+#### **Git**
+
+- Git adalah sebuah version control system pada perangkat lunak yang berfungsi untuk menyimpan setiap perubahan pada file maupun direktori pada suatu project.
+- kenapa kita harus menggunakan Git pada project kita, karena dengan git kita bisa mengetahui perubahan apa saja yang terjadi.
+
+#### **Github**
+
+- Github adalah sebuah website untuk manajemen project entah itu menyimpan maupun megelola, github juga merupakan platform jejaring sosial bagi software developer diseluruh dunia.
+- kenapa kita harus menggunakan Github, karena Github memudahkan kita untuk menyimpan kode yang telah kita buat dan Github juga membantu kita untuk berkolaborasi dengan orang lain, Github juga bisa kita gunakan sebagai portfolio kita.
+  <!-- Peserta mampu memahami perbedaan antara Git dan Github -->
+  <!-- Peserta mampu memahami alur kerja dari Git dan Github -->
+
+#### **Alur Kerja**
+
+- Alur kerja untuk penggunaan Git dan Github adalah
+  1. buat sebuah repositori baru diwebsite github
+  2. buka file project kita diterminal
+  3. lakukan inisiasi dengan git init
+  4. buat remote baru
+  5. masukan file dengan git add ./ git \* (setalah melakukan git add . file perubahan akan tersimpan di lokal kita)
+  6. lakukan commit pada file yang telah ditambahkan dengan git commit (setelah melakukan commit perubahan akan tersimpan secara permanen dilokal)
+  7. lakukan push untuk mengirim file kedalam repositori kita (setelah push dilakukan file kita akan otomatis tersimpan di github secara permanen)
+  <!-- Peserta mampu memahami dan membuat Repository Git -->
+
+#### **Repositori**
+
+- Repositori adalah sebuah direktori untuk menyimpan files didalam github, repositori biasanya disebut repo.
+- cara membuat repo adalah
+- .masuk kedalam platform github
+- .klik tombol new repositori
+- .masukan nama repositori dan pilih public atau private
+- .untuk pengaturan lainnya adalah opsional
+- .setelah itu tekan tombol create repository
+- jika berhasil kita akan diarahkan ke halaman repositori dengan tampilan seperti ini
+  ![image info](./asset/repo.png)
+- kenapa muncul tampilan seperti itu, karena repositori tersebut masih kosong
+<!-- Peserta mampu melakukan commit pada Git -->
+
+#### **Add dan Commit**
+
+- git Add berfungsi untuk menambahkan file atau perubahan file kita kedalam repositori.
+- git Commit berfungsi untuk menyimpan file yang ditambahkan kedalam local.
+- cara melakukan add adalah dengan mengetikan git add (nama file) dan git add ./\* (untuk seluruh file)
+
+- ![image info](./asset/git-add.png)
+
+- (**_note_** add hanya dapat dilakukan setelah diinisiasi)
+
+- cara melakukan commit adalah dengan mengetikan git commit -m "pesan atau catatan kita"
+
+![image info](./asset/git-commit.png)
+
+- (**_note_** commit hanya dapat dilakukan setelah file ditambahkan)
+  <!-- Peserta mampu mempublish aplikasi ke Github -->
+- #### **publish to Github**
+- 1. untuk mempublish ke github kita perlu membuat sebuah repo
+- 2. setelah itu kita inisiasi dan membuat remote baru dengan alamat yang sesuai dengan repo
+
+  ```
+  git remote add origin https://github.com/RioAldie/repo-saya.git
+
+  ```
+
+- 3. lalu kita buat branch baru, jika mengikuti default github nama branch kita akan menjadi main
+
+  ```
+  git branch -M main
+
+  ```
+
+- 4. setelah itu kita push semua file yang telah dicommit sebelumnya
+
+  ```
+
+  git push -u origin main
+
+  ```
+
+- contoh ![image info](./asset/git-publish.png)
+- hasil ![image info](./asset/myrepo.png)
+  <!-- Peserta mampu melakukan cloning Github ke local -->
+- #### **Clone**
+- untuk mengcloning sebuah repositori ke dalam local dapat menggunakan git clone
+- 1. buat folder baru
+- 2. masuk ke terminal sesuai dengan root folder
+- 3. ketikan git clone (link dari repo yang akan diclone)
+- 4. cloning berhasil
+- contoh ![image info](./asset/git-clone.png)

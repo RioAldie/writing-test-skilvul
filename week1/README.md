@@ -443,12 +443,12 @@
 <!-- Peserta mampu memahami beberapa cara menyisipkan CSS ke dalam HTML  -->
 - ##### **Cara penggunaan CSS**
 - ada 3 cara penggunaan CSS
-- **inline** > cara penggunaan CSS inline adalah menuliskan secara langsung sebuah code css kedalam sebuah tag element HTML
+  **inline** > cara penggunaan CSS inline adalah menuliskan secara langsung sebuah code css kedalam sebuah tag element HTML
   - contoh kode css untuk merubah warna teks dengan inline css
   ```
     <p style="color: Blue;">Blue</p>
   ```
-- **internal** > cara penggunaan CSS internal adalah dengan menuliskan kode css di satu file HTML.
+  **internal** > cara penggunaan CSS internal adalah dengan menuliskan kode css di satu file HTML.
 - best practice dalam penggunaan internal CSS adalah dengan menuliskan kode css kita dibawah element head dan diatas body.
 
   - contoh kode css untuk merubah warna teks dengan internal css
@@ -462,15 +462,20 @@
 
   ```
 
-- **external** > cara penggunaan CSS external adalah dengan menuliskan kode css kedalam file terpisah dengan format .css, lalu file tersebut akan dipanggil didalam html menggunakan element link - contoh pemanggilan css external
-  ```
+**external css**
+
+- cara penggunaan CSS external adalah dengan menuliskan kode css kedalam file terpisah dengan format .css, lalu file tersebut akan dipanggil - - didalam html menggunakan element link - contoh pemanggilan css external
+
+  ````
   <link rel="stylesheet" href="style.css">
 
       ```
 
   <!-- Peserta mampu memahami dan menggunakan sintaks dasar dari CSS  -->
+  ````
 
-- ##### **CSS Syntax**
+##### **CSS Syntax**
+
 - untuk menuliskan kode css yang benar kode css harus memiliki selector, property dan value property
 
 ```
@@ -484,8 +489,11 @@
 - selain itu css juga memiliki pseudo selector yang memiliki ciri khas : contoh div:hover{}
   <!-- Peserta mampu menerapkan styling CSS pada sebuah halaman HTML  -->
   <!-- Peserta mampu memahami dan menggunakan metode responsive web design menggunakan CSS  -->
-- ##### **Responsive Design**
-- **Responsive website design** adalah website yang memiliki tampilan yang bagus saat website tersebut dibuka di berbagai device.
+
+##### **Responsive Design**
+
+**Responsive website design** adalah website yang memiliki tampilan yang bagus saat website tersebut dibuka di berbagai device.
+
 - untuk membuat responsive web design di css kita dapat menggunakan **Media Query**
 
   ```
@@ -499,8 +507,10 @@
 
   <!-- Peserta mampu memahami dan menggunakan flexbox -->
 
-- ##### **CSS Flexbox**
-- **Flexbox** adalah
+##### **CSS Flexbox**
+
+**Flexbox** merupakan konsep pengaturan layout yang mengatur ukuran elemen Child dari suatu Container untuk beradaptasi dengan Parent/Container-nya.
+
 - cara penggunaan flexbox adalah dengan menganti display menjadi display: flex;
 - beberapa property flexbox yang sering digunakan
   - **flex-direction** untuk mengatur penempatan elemen-elemen didalamnya yaitu secara horizontal atau vertikal
@@ -519,3 +529,73 @@
     }
 
   ```
+
+## Algoritma & Data Structures
+
+#### Data Structures atau struktur data
+
+- **Struktur Data** adalah cara penyimpanan , pengorganisasian , dan pengaturan data di dalam media penyimpanan komputer sehingga data tersebut dapat digunakan secara efisien.
+- Manfaat Belajar Struktur data kita mampu menyusun data yang kita temui menjadi jauh lebih sistematis dan kita menjadi terbiasa berpikir by data dan berpikir secara kritis
+
+#### Algoritma
+
+- **Algoritma** adalah sederetan langkah-langkah logis yang disusun secara sistematis untuk memecahkan suatu masalah.
+- Manfaat Belajar Algoritma adalah membantu kita mencari solusi dari masalah-masalah tertentu secara sistematis dan step by step.
+- contoh algoritma sederhana menukar isi gelas A dan B
+  - siapkan gelas C
+  - masukan isi gelas A ke gelas C
+  - masukan isi gelas B ke gelas A
+  - masukan isi gelas C ke gelas B
+  - isi gelas A dan B telah berhasi ditukar
+- contoh penerapan algoritma menukar isi gelas A dan B kedalam sebuah bahasa pemrograman
+  - start
+  - buat variable gelasA = a, gelasB = b, gelasC
+  - gelasC = gelasA
+  - gelasA = gelasB
+  - gelasB = gelasC
+  - end
+    **Big O Notation** adalah sebuah cara atau metode untuk melakukan analisa terhadap sebuah algoritma pemrograman terhadap waktu eksekusi.
+- singkatnya big o notation ini sering digunakan untuk mendefinisikan kerumitas algortima oleh para programmer
+
+###### penerapan algoritma dalam sebuah program Javascript
+
+**contoh program mengetahui klasifikasi pengelompokan usia dengan diketaui umur**
+
+```
+<script>
+        let umur = 40;
+        if(umur <= 6){
+            console.log('Balita')
+        }else if(umur <= 11){
+            console.log('Anak-anak')
+        }else if(umur <= 16){
+            console.log('remaja')
+        }else if(umur <= 22){
+            console.log('pemuda/pemudi')
+        }else if(umur <= 40){
+            console.log('dewasa')
+        }else{
+            console.log('tua')
+        }
+</script>
+// output Dewasa
+
+```
+
+###### penerapan program struktur data dengan Javascript
+
+**contoh program mengelompokan hewan reptil dengan array**
+
+```
+const reptil = ['ular','kadal','kura-kura','buaya']
+
+```
+
+<!-- Peserta mampu memahami perbedaan antara Algoritma dan Data Structures -->
+<!-- Peserta mampu memahami manfaat dari algoritma dan data structure -->
+<!-- Peserta mampu membuat algoritma sederhana -->
+<!-- Peserta mampu menerapkan algoritma ke dalam bahasa pemrograman -->
+<!-- Peserta mampu dan memahami Big O Notation  -->
+<!-- Peserta mampu memahami dan mempraktikkan pendekatan menyelesaikan suatu masalah untuk diselesaikan melalui program  -->
+<!-- Peserta mampu memahami dan menerapkan salah satu algoritma dengan JavaScript  -->
+<!-- Peserta mampu memahami dan menerapkan salah satu struktur data dengan JavaScript -->

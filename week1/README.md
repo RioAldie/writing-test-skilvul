@@ -296,7 +296,8 @@
   ##### Tag untuk memanipulasi Font/text
 
   - **h1,h2,h3,h4,h5,h6** adalah element yang digunakan untuk membuat judul didalam html, element ini dimulai dari h1 untuk ukuran terbesar dan diahiri h6 untuk ukuran judul terkecil
-  - ```
+
+  ```
       <h1>Header 1</h1>
       <h2>Header 2</h2>
       <h3>Header 3</h3>
@@ -304,23 +305,25 @@
       <h5>Header 5</h5>
       <h6>Header 6</h6>
 
-    ```
+  ```
 
   - **p** adalah element tag yang digunakan untuk membuat sebuah paragraf dalam html
-  - ```
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta excepturi magni perferendis, totam neque corporis suscipit expedita. Libero, rerum? Ut cum officia architecto deserunt corporis amet mollitia fugit molestias exercitationem.</p>
 
-    ```
+  ```
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta excepturi magni perferendis, totam neque corporis suscipit expedita. Libero, rerum? Ut cum officia architecto deserunt corporis amet mollitia fugit molestias exercitationem.</p>
+
+  ```
 
   - **b,i,bold,strong,q** adalah tag untuk merubah styling font/text.
-  - ```
+
+  ```
      <b>Untuk merubah text menjadi bold/bercetak tebal</b>
      <bold>Untuk merubah text menjadi bold/bercetak tebal</bold>
      <strong>Untuk merubah text menjadi bold/bercetak tebal</strong>
      <i>untuk merubah text menjadi italic/bercetak miring</i>
      <q>untuk menambahkan " " / tanda kutip atau merubah text menjadi quotes </q>
 
-    ```
+  ```
 
   ##### List dan Tabel
 
@@ -328,7 +331,8 @@
   - li sebagai penampung data yang ada dilist atau sebagai item yang dilist
   - ul untuk membuat unordered list atau list yang tidak teratur
   - ol untuk membuat ordered list atau list yang teratur/berurutan
-  - ```
+
+  ```
     <ul>
       <li> list item 1 </li>
       <li> list item 2 </li>
@@ -340,7 +344,7 @@
       <li> list item 3 </li>
     </ol>
 
-    ```
+  ```
 
   - **table,th,tr,td** adalah element tag html untuk membuat sebuah tabel
   - table untuk membuat sebuah table itu sendiri
@@ -432,3 +436,86 @@
 ```
 
 ## CSS
+
+<!-- Peserta mampu memahami peran CSS pada web development  -->
+
+- **CSS(Cascading Style Sheet)** adalah sebuah bahasa markup yang berfungsi untuk mempercantik sebuah halaman website
+<!-- Peserta mampu memahami beberapa cara menyisipkan CSS ke dalam HTML  -->
+- ##### **Cara penggunaan CSS**
+- ada 3 cara penggunaan CSS
+- **inline** > cara penggunaan CSS inline adalah menuliskan secara langsung sebuah code css kedalam sebuah tag element HTML
+  - contoh kode css untuk merubah warna teks dengan inline css
+  ```
+    <p style="color: Blue;">Blue</p>
+  ```
+- **internal** > cara penggunaan CSS internal adalah dengan menuliskan kode css di satu file HTML.
+- best practice dalam penggunaan internal CSS adalah dengan menuliskan kode css kita dibawah element head dan diatas body.
+
+  - contoh kode css untuk merubah warna teks dengan internal css
+
+  ```
+  <style>
+      p{
+          color: blueviolet;
+      }
+  </style>
+
+  ```
+
+- **external** > cara penggunaan CSS external adalah dengan menuliskan kode css kedalam file terpisah dengan format .css, lalu file tersebut akan dipanggil didalam html menggunakan element link - contoh pemanggilan css external
+  ```
+  <link rel="stylesheet" href="style.css">
+
+      ```
+
+  <!-- Peserta mampu memahami dan menggunakan sintaks dasar dari CSS  -->
+
+- ##### **CSS Syntax**
+- untuk menuliskan kode css yang benar kode css harus memiliki selector, property dan value property
+
+```
+  div{
+    color: '#000000'
+  }
+
+```
+
+- dari contoh diatas div merupakan selector, color merupakan property dan #00000 merupakan value dari properti
+- selain itu css juga memiliki pseudo selector yang memiliki ciri khas : contoh div:hover{}
+  <!-- Peserta mampu menerapkan styling CSS pada sebuah halaman HTML  -->
+  <!-- Peserta mampu memahami dan menggunakan metode responsive web design menggunakan CSS  -->
+- ##### **Responsive Design**
+- **Responsive website design** adalah website yang memiliki tampilan yang bagus saat website tersebut dibuka di berbagai device.
+- untuk membuat responsive web design di css kita dapat menggunakan **Media Query**
+
+  ```
+  @media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+  }
+
+  ```
+
+  <!-- Peserta mampu memahami dan menggunakan flexbox -->
+
+- ##### **CSS Flexbox**
+- **Flexbox** adalah
+- cara penggunaan flexbox adalah dengan menganti display menjadi display: flex;
+- beberapa property flexbox yang sering digunakan
+  - **flex-direction** untuk mengatur penempatan elemen-elemen didalamnya yaitu secara horizontal atau vertikal
+  - **justify-content** untuk mengatur jarak antar elemen secara otomatis
+  - **align-items** untuk mengatur penempatan elemen-elemen
+  - **flex-wrap** untuk membuat elemen-elemen dapat melakukan wrapping saat box berubah
+- contoh penggunaan flexbox
+
+  ```
+    div{
+        display: flex;
+        flex-direction: row;
+        justify-self: start;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+  ```

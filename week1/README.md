@@ -250,3 +250,185 @@
 - 3. ketikan git clone (link dari repo yang akan diclone)
 - 4. cloning berhasil
 - contoh ![image info](./asset/git-clone.png)
+
+## HTML
+
+- **HTML(hyper text markup language)** adalah sebuah bahasa markup yang berfungsi sebagai kerangka dasar dalam pembuatan website.
+- file html memiliki format namafile.html
+- susunan html bisa dibuat dengan hanya element html,head,title,body tetapi setelah hadirnya html 5 susunannya berubah.
+- contoh syntak html
+
+```
+  <html>
+    <head>
+      <title> website dengan HTML</title>
+    </head>
+    <body>
+      Halaman Utama
+    </body>
+  </html>
+
+```
+
+- contoh syntax html5
+
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website dengan HTML 5</title>
+</head>
+<body>
+    Halaman Utama
+</body>
+</html>
+
+```
+
+- jika kita menggunakan text editor vscode dan sublime terdapat snippet yang membantu kita menuliskan syntax awal html yaitu cukup ketikan **!** pada file html kita
+- syntax didalam html terdiri dari susunan taq atau emement
+- penulisan element atau tag umumnya adalah menggunakan <> sebagai pembuka dan </> sebagai penutup, walaupun juga terdapat beberapa element yang tidak memerlukan penutup element itu disebut void element.
+- contoh tag HTML yang paling sering digunakan
+
+  ##### Tag untuk memanipulasi Font/text
+
+  - **h1,h2,h3,h4,h5,h6** adalah element yang digunakan untuk membuat judul didalam html, element ini dimulai dari h1 untuk ukuran terbesar dan diahiri h6 untuk ukuran judul terkecil
+  - ```
+      <h1>Header 1</h1>
+      <h2>Header 2</h2>
+      <h3>Header 3</h3>
+      <h4>Header 4</h4>
+      <h5>Header 5</h5>
+      <h6>Header 6</h6>
+
+    ```
+
+  - **p** adalah element tag yang digunakan untuk membuat sebuah paragraf dalam html
+  - ```
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta excepturi magni perferendis, totam neque corporis suscipit expedita. Libero, rerum? Ut cum officia architecto deserunt corporis amet mollitia fugit molestias exercitationem.</p>
+
+    ```
+
+  - **b,i,bold,strong,q** adalah tag untuk merubah styling font/text.
+  - ```
+     <b>Untuk merubah text menjadi bold/bercetak tebal</b>
+     <bold>Untuk merubah text menjadi bold/bercetak tebal</bold>
+     <strong>Untuk merubah text menjadi bold/bercetak tebal</strong>
+     <i>untuk merubah text menjadi italic/bercetak miring</i>
+     <q>untuk menambahkan " " / tanda kutip atau merubah text menjadi quotes </q>
+
+    ```
+
+  ##### List dan Tabel
+
+  - **ul,ol dan li** adalah taq untuk membuat list di html
+  - li sebagai penampung data yang ada dilist atau sebagai item yang dilist
+  - ul untuk membuat unordered list atau list yang tidak teratur
+  - ol untuk membuat ordered list atau list yang teratur/berurutan
+  - ```
+    <ul>
+      <li> list item 1 </li>
+      <li> list item 2 </li>
+      <li> list item 3 </li>
+    </ul>
+    <ol>
+      <li> list item 1 </li>
+      <li> list item 2 </li>
+      <li> list item 3 </li>
+    </ol>
+
+    ```
+
+  - **table,th,tr,td** adalah element tag html untuk membuat sebuah tabel
+  - table untuk membuat sebuah table itu sendiri
+  - th untuk membuat tabel head
+  - tr untuk membuat tabel row
+  - td untuk membuat tabel cell
+
+  ```
+  <table border="solid">
+      <tr>
+          <th>name</th>
+          <th>umur</th>
+          <th>kota</th>
+      </tr>
+
+      <tr>
+          <td>rio</td>
+          <td>21</td>
+          <td>nganjuk</td>
+      </tr>
+  </table>
+  ```
+
+  ##### Anchor
+
+  - **a href** adalah tag element html yang berfungsi sebagai penampung link aktif dan sebagai navigasi
+
+  ```
+      <a href="#home"> tombol untuk pergi ke home </a> //contoh penggunaan a href untuk navigasi dihalaman dengan menggunakan id sebagai targetnya
+      <a href="https://facebook.com"> tombol untuk pergi ke website lain </a> //contoh penggunaan a href untuk membuka website lain
+  ```
+
+  ##### Section,Div,Span
+
+  - **Section** adalah tag html untuk mendefinisikan setiap sesi
+  - **Div** adalah tag html untuk mendefinisikan divisi, element div sendiri sangat erat dengan konsep Box element
+  - **Span** adalah tag yang sebenarnya tidak mempresentasikan apapun, span sering digunakan untuk memanipulasi text pada bagian tertentu span berkaitan erat dengan styling.
+
+  ```
+    <section>
+      <div>
+        ini adalah sebuah div didalam section <span> ini span </span>
+      </div>
+    </section>
+
+  ```
+
+  ##### Media atau Content
+
+  - **img** adalah tag untuk menampilkan sebuah gambar
+  - **audio** adalah tag untuk menampilkan suara
+  - **video** adalah tag untuk menampilkan video
+
+  ##### Semantic element
+
+  - **semantic html** adalah tag html yang lebih mementingkan informasi yang ada, semantic html juga sangat berguna untuk menunjang peforma SEO.
+  - **article** untuk membuat elemen artikel
+  - **aside** untuk membuat elemen bagian samping
+  - **details** untuk membuat elemen datail atau spoiler
+  - **figcaption** untuk membuat teks caption pada figure
+  - **figure** untuk membuat figur atau gambar pada artikel
+  - **footer** untuk membuat footer
+  - contoh implementasi semantic
+
+```<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantic HTML</title>
+</head>
+<body>
+    <header>
+        <nav>
+            navigasi
+        </nav>
+    </header>
+    <article>Artikel 1
+        <figure>gambar</figure>
+    </article>
+    <article>Artikel 2</article>
+    <aside>Aside </aside>
+    <footer>
+        footer
+    </footer>
+</body>
+</html>
+```
+
+## CSS

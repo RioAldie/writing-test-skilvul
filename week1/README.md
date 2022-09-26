@@ -591,11 +591,148 @@ const reptil = ['ular','kadal','kura-kura','buaya']
 
 ```
 
-<!-- Peserta mampu memahami perbedaan antara Algoritma dan Data Structures -->
-<!-- Peserta mampu memahami manfaat dari algoritma dan data structure -->
-<!-- Peserta mampu membuat algoritma sederhana -->
-<!-- Peserta mampu menerapkan algoritma ke dalam bahasa pemrograman -->
-<!-- Peserta mampu dan memahami Big O Notation  -->
-<!-- Peserta mampu memahami dan mempraktikkan pendekatan menyelesaikan suatu masalah untuk diselesaikan melalui program  -->
-<!-- Peserta mampu memahami dan menerapkan salah satu algoritma dengan JavaScript  -->
-<!-- Peserta mampu memahami dan menerapkan salah satu struktur data dengan JavaScript -->
+## Javascript Dasar
+
+- **javascript** adalah sebuah bahasa pemrongraman yang berfungsi untuk membuat halaman website menjadi lebih interaktif.
+- javacript memiliki format file .js
+<!-- Peserta mampu memahami dan menjalankan JavaScript -->
+- javacript umumnya berjalan didalam web browser walaupun ada juga javascript yang berjalan didalam server yaitu NodeJs
+- untuk menjalankan kode javascript kita bisa menuliskannya langsung didalam kode html didalam tag element script
+
+```
+  <script>
+     console.log('Hello Skilvul')
+  </script>
+
+```
+
+- sedangkan untuk best practice penggunaan javascript adalah dengan menulis kode js kita di file terpisah dengan format .js, lalu file tersebut akan kita panggil didalam file html
+
+```
+  <script src="script.js"></script>
+
+```
+
+- **variabel** adalah tempat untuk menyimpan suatu data
+- didalam javacript ada 3 variabel yaitu
+  - **var** (variabel pertama atau variabel bawaan dijavascript)
+  - **let** (variabel yang ada dibuat di ES6, let sendiri ditujukan untuk menggantikan var)
+  - **const** (variabel yang ada dibuat di ES6, const digunakan untuk menampung variabel konstanta/ bernilai tetap)
+
+<!-- Peserta mampu memahami dan membedakan berbagai tipe data -->
+
+#### Tipe Data
+
+- **tipe data** didalam javascript ada tipe data primitif dan non-primitif
+
+  - **primitif** - **String** adalah tipe data yang dapat menampung banyak karakter sekaligus.
+    ```
+    let nama = 'Rio Aldi';
+
+          ```
+        - **Number** adalah tipe data yang menampung angka
+          ```
+            let umur = 21;
+
+          ```
+        - **Boolean** adalah tipe data yang bernilai benar atau salah(true/false)
+          ```
+            let isLogin = false;
+
+          ```
+        - **null** adalah tipe data yang memiliki nilai null / tidak ada
+          ```
+            let myMoney = null;
+
+          ```
+        - **undefined** adalah tipe data yang memiliki nilai tetapi tidak terdefinisi;
+
+    <!-- Peserta mampu memahami dan menggunakan operator -->
+
+#### Operator
+
+- **Operator** adalah intruksi yang digunakan untuk melakukan suatu proses.
+- operator didalam javascript
+
+  - **operator Aritmatika** merupakan operator untuk melakukan operasi aritmatika.
+
+    - penjumlahan ( + )
+    - pengurangan ( - )
+    - perkalian ( \* )
+    - pangkat ( \*\* )
+    - pembagian ( / )
+    - modulus ( % )
+
+  - **operator Penuagasan** merupakan operator yang digunakan untuk memberikan tugas kepada variabel
+    - ( = ) memberikan sebuah nilai
+    - ( += ) penambahan dan pengisian
+    - ( -= ) pengurangan dan pengisian
+    - ( \*= ) perkalian dan pengisian
+    - ( \*\* ) pemangkatan dan pengisian
+    - ( /= ) pembagian dan pengisian
+    - ( %= ) modulus dan pengisian
+  - **operator perbandingan** merupakan operator yang digunakan untuk membandingkan dua nilai, operator ini akan menghasilkan boolean.
+    - ( > ) lebih besar
+    - ( < ) lebih kecil
+    - ( == ) sama dengan
+    - ( != ) tidak sama dengan
+    - ( >= ) lebih besar sama dengan
+    - ( <= ) lebih kecil sama dengan
+  - **operator logika** digunakan untuk melakukan operasi terhadap dua nilai boolean.
+    - ( && ) dan atau AND
+    - ( || ) OR
+    - ( ! ) Negasi
+
+<!-- Peserta mampu memahami dan membedakan control flow (conditional dan looping) -->
+
+### Control FLow
+
+- #### **Control flow** sebuah instruksi untuk mengatur alur dari algoritma dan program
+- **If Else** adalah control flow percabangan yang digunakan untuk kondisi yang diinginkan dengan proses seleksi
+- if else sering digunakan untuk control flow yang hanya memiliki sedikit kondisi
+
+```
+   let umur = 40;
+        if(umur <= 6){
+            console.log('Balita')
+        }else if(umur <= 11){
+            console.log('Anak-anak')
+        }else if(umur <= 16){
+            console.log('remaja')
+        }else if(umur <= 22){
+            console.log('pemuda/pemudi')
+        }else if(umur <= 40){
+            console.log('dewasa')
+        }else{
+            console.log('tua')
+        }
+    //output dewasa
+
+```
+
+- **Switch Case** adalah suatu bentuk kondisi percabangan bernilai true, maka blok kode akan dijalankan.
+- switch case sering digunakan untuk percabangan yang memiliki banyak kondisi.
+
+```
+  let hari = 1;
+
+switch (hari) {
+    case 1 :
+        console.log('Senin')
+        break;
+    case 2 :
+        console.log('Selasa')
+        break;
+    case 3 :
+        console.log('Rabu')
+        break;
+    case 4 :
+        console.log('Kamis')
+        break;
+
+    default:
+        console.log('libur')
+        break;
+}
+
+```

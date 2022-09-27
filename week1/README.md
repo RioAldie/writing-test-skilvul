@@ -625,31 +625,48 @@ const reptil = ['ular','kadal','kura-kura','buaya']
 
 - **tipe data** didalam javascript ada tipe data primitif dan non-primitif
 
-  - **primitif** - **String** adalah tipe data yang dapat menampung banyak karakter sekaligus.
+  - **primitif**
+  - **String** adalah tipe data yang dapat menampung banyak karakter sekaligus.
 
-    ````
-    let nama = 'Rio Aldi';
+  ```
+        let nama = 'Rio Aldi';
+  ```
 
-          ```
-        - **Number** adalah tipe data yang menampung angka
-          ```
-            let umur = 21;
+- **Number** adalah tipe data yang menampung angka
 
-          ```
-        - **Boolean** adalah tipe data yang bernilai benar atau salah(true/false)
-          ```
-            let isLogin = false;
+  ```
+        let umur = 21;
 
-          ```
-        - **null** adalah tipe data yang memiliki nilai null / tidak ada
-          ```
-            let myMoney = null;
+  ```
 
-          ```
-        - **undefined** adalah tipe data yang memiliki nilai tetapi tidak terdefinisi;
+- **Boolean** adalah tipe data yang bernilai benar atau salah(true/false)
 
-    <!-- Peserta mampu memahami dan menggunakan operator -->
-    ````
+  ```
+        let isLogin = false;
+
+  ```
+
+- **null** adalah tipe data yang memiliki nilai null / tidak ada
+
+```
+  let myMoney = null;
+```
+
+- **undefined** adalah tipe data yang memiliki nilai tetapi tidak terdefinisi;
+
+-**Non-Primitf** adalah tipe data yang didefinisikan sendiri oleh programer dan bisanya lebih dari satu nilai.
+
+- contoh **Array** dan **Object**
+
+  ```
+    const hewanReptile = ['ular','buaya','kadal'];
+    const mahasiswa = {
+      nama: 'Rio Aldi E',
+      umur: 21,
+      Nim: '2013020017'
+    }
+
+  ```
 
 #### Operator
 

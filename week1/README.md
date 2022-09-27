@@ -626,7 +626,8 @@ const reptil = ['ular','kadal','kura-kura','buaya']
 - **tipe data** didalam javascript ada tipe data primitif dan non-primitif
 
   - **primitif** - **String** adalah tipe data yang dapat menampung banyak karakter sekaligus.
-    ```
+
+    ````
     let nama = 'Rio Aldi';
 
           ```
@@ -648,6 +649,7 @@ const reptil = ['ular','kadal','kura-kura','buaya']
         - **undefined** adalah tipe data yang memiliki nilai tetapi tidak terdefinisi;
 
     <!-- Peserta mampu memahami dan menggunakan operator -->
+    ````
 
 #### Operator
 
@@ -734,5 +736,43 @@ switch (hari) {
         console.log('libur')
         break;
 }
+
+```
+
+### LOOPING
+
+- #### **Looping** adalah sebuah pelurangan didalam bahasa pemrograman
+- Loping di javascript dapat menggunakan for,while dan do while
+
+- **while** adalah perulangan yang jumlah perulangannya belum diketahui
+
+```
+  while( angka < 10){
+    console.log(angka)
+    angka++;
+  }
+
+```
+
+- **do while** mengulang statement sebanyak satu kali terlebih dahulu, kemudian akan mengecek statement didalam while apakah bernilai benar, jika bernilai benar maka akan diulang kembali.
+
+```
+  do{
+    console.log(angka);
+    angka++;
+  }while(angka <10)
+
+```
+
+- **for** adalah perulangan yang sudah diketahui jumlahnya
+- for harus memiliki
+  -initial
+  -condition
+  -increment
+
+```
+  for(i=0; i<=10; i++){
+    console.log(i)
+  }
 
 ```

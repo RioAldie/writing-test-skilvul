@@ -100,6 +100,15 @@ const greeting = () =>{
 
 <!-- data type -->
 
+### Error dan debuging
+
+- **error** ada bebarapa error didalam javascript yang akan sering ditemui contoh
+  - reference error
+  - type error
+  - error()
+  - dll
+- **debugging** untuk melakukan debugging didalam javascript biasanya developer js sering menggunakan inspect elemen -> console, karena js biasanya akan memunculkan error di console kita.
+
 ## Data Type
 
 - **tipe data** didalam javascript ada tipe data primitif dan non-primitif

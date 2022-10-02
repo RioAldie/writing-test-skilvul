@@ -149,6 +149,10 @@ const greeting = () =>{
 
 - **Tipe Data Non-Primitf** adalah tipe data yang didefinisikan sendiri oleh programer dan bisanya lebih dari satu nilai.
 
+- **Array** adalah struktur data yang digunakan untuk menyimpan sekumpulan data dalam satu tempat, array dibuat dengan kurung siku[].
+
+- **Object** adalah wadah untuk nilai yang diberi nama atau biasa disebut properti atau method, object dibuat dengan curly bracket{}.
+
 - contoh **Array** dan **Object**
 
   ```

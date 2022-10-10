@@ -251,4 +251,113 @@
 
 - sebuah array yang menyimpan object didalamnya, konsep aof ini sangat berkaitan erat dengan JSON dan akan kiat jumpai nanti saat bermain dengan API.
 
+## Module
+
+- **javacript module** adalah file Javascript yang di dalamnya terdapat value dari objects, functions, dan variables. Kemudian file tersebut dapat diexport dan diimport oleh file lain. Yang mana file lain yang mengimportnya dapat menggunakan values yang ada di file tersebut.
+- **export** adalah sebuah metode dimana kita memberikan akses pada kode kita agar dapat digunakan oleh file js lainnya.
+
+  - pada versi nodejs 14 kebawah untuk melakukan export kita perlu menuliskan
+    module.exports = namavariabel;
+    `module.exports = state;`
+  - sedangakan ada cara yang lebih baru jika kita menggunakan node versi 14 keatas
+    `export state;`
+
+- **import** adalah sebuah metode untuk menerima/memanggil sebuah variabel dari file lain.
+  - pada versi nodejs 14 kebawah untuk melakukan import kita perlu menuliskan
+    require('file.js')
+    `const state = require('file.js')`
+  - sedangakan ada cara yang lebih baru jika kita menggunakan node versi 14 keatas
+    `import state from 'file.js'`
+
 ## Rekursive Function
+
+- **Rekursif** adalah sebuah function yang memanggil dirinya sendiri.
+- rekursif kebanyakan digunakan untuk kasus yang berkaitan dengan perhitungan.
+- contoh function rekursif
+
+  ```
+      function rekursif(n){
+          if(n === 9){
+            return n;
+          }
+          x = x + 1;
+          return rekursif(x);
+      }
+
+  ```
+
+## Web Storage API
+
+- salah satu Web API yang dapat menyimpan data secara lokal pada sisi client. Berbeda dengan objek atau array, data yang disimpan pada objek atau array JavaScript bersifat sementara, dan akan hilang jika terjadi reload atau pergantian URL pada browser,data yang disimpan didalam webstore akan tetap ada walaupun website di reload maupun diclose.
+
+### Local storage
+
+- Local storage adalah sebuah penyimpanan data di local browser dan data tersebut tidak akan terhapus walaupun browser diclose dan direload, local storage seringkali digunakan untuk menyimpan session login.
+- **setItem** untuk menyimpan data kelocal storage
+
+```
+  localStorage.setItem(key, 'value');
+
+```
+
+- **getItem** untuk mengambil data di local storage
+
+```
+
+  const dataLocal = localStorage.getItem(key);
+
+  console.log(dataLocal);
+
+```
+
+### Cookies
+
+- Cookie adalah file yang dibuat oleh situs yang Anda kunjungi. Cookie membuat kegiatan online Anda jadi lebih mudah dengan menyimpan informasi browsing. Dengan cookie, situs membuat Anda tetap login, mengingat preferensi situs Anda, dan memberikan konten lokal yang sesuai dengan Anda.
+
+## Asyncrhonous
+
+**Syncronous** adalah eksekusi code secara berurutan dimana eksekusi akan menunggu sampai kode selesai sebelum lanjut ke kode slanjutnya.
+**Asyncronus** adalah eksekusi code tanpa menunggu eksekusi code lain selesai, dimana kode dibawahnya akan tetap dieksekusi walaupun kode diatas belum dieksekusi
+
+### Callback
+
+- **Callback** adalah sebuah parameter yang merupakan function
+- contoh callback
+
+  ```
+    function intro(nama){
+      consolee.log('Halo saya', nama);
+    }
+
+    function getNama(){
+      const nama = prompt('masukan nama anda');
+      intro(nama);
+    }
+
+    getNama();
+
+  ```
+
+### Promise
+
+- **Promise** Sebuah mekanisme baru pada fitur javascript / ES6 yang merepresentasikan sebuah object request pengolahan data yang dilakukan secara asynchronous seperti ajax.
+- promise digunakan untuk mendapatkan hasil yang masih belum selesai atau masih diharapkan.
+- promise memiliki 2 paramaeter utama yaitu resolve dan reject
+- resolve adalah instan object yang mengembalikan nilai kedalam then()
+- reject adalah instan object yang mengembalikan error kedalam catch()
+
+  ```
+    const myPromise = new Promise((resolve, reject) => {
+                  if(login){
+                    return resolve("Login berhasil");
+                  }else{
+                    return reject("login gagal");
+                  }
+               });
+    myPromise.then((res)=>{
+        console.log(res);
+    }).catch((err) =>{
+        console.log(err);
+    })
+
+  ```

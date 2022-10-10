@@ -3,6 +3,9 @@
 ## Array
 
 - **Array** adalah truktur data yang digunakan untuk menyimpan sebuah kelompok data dalam satu tempat, array di javascript dapat menampung berbagai tipe data yang berbeda.
+
+### **Cara Penggunaan Array**
+
 - untuk membuat array kita perlu menggunakan square bracket atau kurung siku []
 - setiap data didalam array memiliki index, index didalam array dimulai dari 0
 
@@ -49,6 +52,8 @@
 
   ```
 
+### Array Property
+
 - **Array Property** adalah fitur yang sudah disediakan atau bawaan didalam javascript untuk membantu developer menggunakan array
 
         - constructor
@@ -66,6 +71,8 @@
     //output: 3
 
   ```
+
+### Array Method
 
 - **Array Method** adalah built-in-method yang disediakan oleh javascript untuk memanipulasi array
 - contoh array built-in-methods yang sering digunakan
@@ -136,5 +143,112 @@
 
     ```
 
-  - **forEach()** untuk melakukan looping pada setiap elemen array
-  - perbedaan map() dan forEach() adalah konsep mereka hampir sama akan tetapi map dapat menghasilkan array baru sedangkan forEach() hanya dapat mengubah array.
+### Array Looping
+
+- **forEach()** untuk melakukan looping pada setiap elemen array
+- perbedaan map() dan forEach() adalah konsep mereka hampir sama akan tetapi map dapat menghasilkan array baru sedangkan forEach() hanya dapat mengubah array.
+
+- **Array Multi dimensi** adalah array yang didalamnya terdapat array sehingga membentuk kelompok dan dimensi
+
+  - contoh array multidimensi
+
+  ```
+      const buah = [
+          ['jambu biji', 'jambu air',],
+          ['jeruk peras', 'jeruk bali'],
+          ['durian aceh', 'durian musangking']
+      ]
+
+  ```
+
+## Object
+
+- **Object** adalah tipe data non-primitid yang digunakan untuk menyimpan sebuah property dan method.
+  - struktur object dibuat dengan menggunakan curly bracket "{}".
+
+### Property Object
+
+- **Property** adalah data lengkap dari sebuah object yang menyimpan sebuah data.
+  - property dibuat dengan menggunakan key dan value
+  - key adalah nama dari property
+  - value adalah isi atau nilai dari property.
+
+### Method Object
+
+- **Method** adalah action dari sebuah object, method menyimpan sebuah function didalam object
+  - property dibuat dengan menggunakan key dan value
+  - key adalah nama dari method / nama function
+  - value adalah function itu sendiri
+- contoh kode object
+
+  ```
+      let state = {
+        nama: "rio aldi erwanto",
+        umur: "21",
+        salam: () =>{
+          console.log("halo, perkenalkan saya rio")
+        }
+      }
+
+  ```
+
+### Manipulasi Object
+
+- **Mengakses Object**
+  untuk mengakses property atau method kita dapat menggunakan namaObject.property
+
+  ```
+    console.log(state.nama)
+    console.log(state.salam)
+
+  ```
+
+- **Menambahkan Properti baru**
+  untuk menambahkan property baru kita dapat menggunakan assigment "=" dan spread operator "{...}
+
+  ```
+    state = {...state, nim: '2013020017'}
+
+  ```
+
+- **Mengupdate sebuah Object**
+  untuk menguptade kita perlu memanggil properti terlebih dahulu lalu kita gunakan assignment "=" dan value baru.
+
+  ```
+    state.umur = 22;
+
+  ```
+
+- **menghapus sebuah Object**
+  untuk menghapus object kita dapat menggunakan delete operator.
+  ```
+    delete state.nim;
+  ```
+
+### Nested Object
+
+- **Nested Object** adalah sebuah object yang berada didalam object
+  ```
+        let state = {
+          nama: "rio aldi erwanto",
+          umur: "21",
+          keluarga:{
+            adik: "rahma"
+          }
+        }
+  ```
+
+### Looping Object
+
+- **Lopping Object** untuk melakukan sebuah perulangan pada object kita dapat menggunakan method bawaan js yaitu "for in"
+  ```
+    for(let key in object){
+      //console.log(key)
+    }
+  ```
+
+### Array Of Object
+
+- sebuah array yang menyimpan object didalamnya, konsep aof ini sangat berkaitan erat dengan JSON dan akan kiat jumpai nanti saat bermain dengan API.
+
+## Rekursive Function
